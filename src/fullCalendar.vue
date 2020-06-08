@@ -322,6 +322,7 @@
   .event-item{
     cursor: pointer;
     font-size:12px;
+    text-align: center;
     background-color:#d6e9df;
     margin-bottom:2px;
     color: rgba(0,0,0,.87);
