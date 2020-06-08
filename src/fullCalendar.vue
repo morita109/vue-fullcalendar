@@ -47,7 +47,7 @@
                 </event-card>
                 <p v-if="day.events.length > eventLimit"
                    class="more-link" @click.stop="selectThisDay(day, $event)">
-                  + {{day.events[day.events.length -1].cellIndex - eventLimit}} more
+                  + {{day.events[day.events.length -1].cellIndex - eventLimit}} もっと見る
                 </p>
               </div>
             </div>
@@ -322,7 +322,7 @@
   .event-item{
     cursor: pointer;
     font-size:12px;
-    background-color:#C7E6FD;
+    background-color:#d6e9df;
     margin-bottom:2px;
     color: rgba(0,0,0,.87);
     padding:0 0 0 4px;
@@ -331,6 +331,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    border-radius: 9px;
   &.is-start{
      margin-left: 4px;
    // border-top-left-radius:4px;

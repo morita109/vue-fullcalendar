@@ -36,7 +36,7 @@
     computed: {
       title () {
         if (!this.currentMonth) return;
-        return this.currentMonth.locale(this.locale).format('MMMM YYYY')
+        return this.currentMonth.locale(this.locale).format('YYYY年 MM月')
       }
     },
     methods : {
@@ -55,6 +55,7 @@
 .full-calendar-header{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   .header-left,.header-right{
     flex:1;
   }
